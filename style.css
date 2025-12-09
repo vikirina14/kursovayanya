@@ -1314,76 +1314,68 @@ footer p {
     border-radius: 16px;
   }
 
-  /* Characters */
-  .characters h2,
-  .seasons-heading,
-  .creatures-title,
-  .quotes-title,
-  .about-title,
-  .locations-title {
-    font-size: 1.8rem;
-    text-align: center;
-    margin-bottom: 32px;
-  }
-  .characters h2,
-  .seasons-heading,
-  .creatures-title {
-    text-align: left;
-  }
-  .characters-container,
-  .seasons-layout,
-  .creatures-grid {
+ /* === МОБИЛЬНАЯ АДАПТАЦИЯ (ТОЛЬКО ДЛЯ ТЕЛЕФОНОВ) === */
+
+@media (max-width: 768px) {
+  /* 1. CHARACTERS: персонажи сверху, фото + текст — под ними */
+  .characters-container {
     flex-direction: column;
     align-items: center;
     gap: 30px;
   }
-  .sidebar,
-  .seasons-sidebar {
+  .sidebar {
     width: 100%;
     max-width: 300px;
-    padding: 16px;
+    padding: 16px 10px;
   }
-  .character-list,
-  .season-list {
+  .character-list {
     height: auto;
     overflow: visible;
+    gap: 16px;
   }
   .dean-wrapper {
     flex-direction: column;
     gap: 24px;
-    padding-right: 0;
+    padding: 0 16px;
   }
   .dean-photo-block {
     width: 100%;
-    height: 300px;
+    height: 280px;
   }
-  .dean-text-column,
-  .season-content {
+  .dean-text-column {
     max-width: 100%;
     text-align: center;
+    padding: 0 16px;
   }
   .dean-quote {
     margin-left: 0;
-    margin-right: auto;
   }
 
-  /* Locations */
-  .location-page {
-    padding: 70px 16px 60px;
+  /* 2. SEASONS: убираем растягивание текста */
+  .season-text {
+    height: auto;
+    overflow: visible;
+    font-size: 18px;
+    line-height: 1.6;
   }
-  .locations-title {
-    position: static;
-    text-align: center;
+  .season-content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
   }
+  .season-keys {
+    align-self: stretch;
+  }
+
+  /* 3. LOCATIONS: одна локация, активная + следующая в колонку, стрелки снизу */
   .location-content {
     flex-direction: column;
-    gap: 30px;
+    gap: 24px;
   }
   .location-text-block,
   .location-image,
   .next-image {
     width: 100%;
-    height: auto;
   }
   .location-image,
   .next-image {
@@ -1391,7 +1383,28 @@ footer p {
   }
   .arrows {
     margin-top: 24px;
+    justify-content: center;
   }
+  .locations-title {
+    position: static;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  /* Общие отступы */
+  .container {
+    padding: 0 16px;
+  }
+  .characters h2,
+  .seasons-heading,
+  .locations-title,
+  .quotes-title,
+  .creatures-title,
+  .about-title {
+    font-size: 1.8rem;
+    margin-bottom: 32px;
+  }
+}
 
   /* Quotes */
   .quotes-inner {
@@ -1451,3 +1464,4 @@ footer p {
     margin: 0 6px;
   }
 }
+
