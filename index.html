@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supernatural Guide</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="logo">SUPERNATURAL</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#characters">CHARACTERS</a></li>
+                    <li><a href="#seasons">SEASONS</a></li>
+                    <li><a href="#locations">LOCATIONS</a></li>
+                    <li><a href="#quotes">QUOTES</a></li>
+                    <li><a href="#creatures">CREATURES</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="logo-container">
+                    <div class="logo-text">SUPERN  TURAL</div>
+                    <div class="logo-symbol">
+                        <img src="assets/images/pentagram.png" alt="Пентаграмма">
+                    </div>
+                    <div class="logo-wings"></div>
+                </div>
+
+                  <div class="hero-content">
+      <div class="welcome-box">
+        <p>Добро пожаловать в мир охотников, ангелов и демонов</p>
+      </div>
+    <button class="btn-start" id="start-tour">Начать обзор</button>
+
+    </div>
+  </div>
+</section>
+
+<!-- CHARACTERS -->
+<section id="characters" class="characters">
+  <div class="container">
+    <h2>CAST AND CREW</h2>
+
+    <div class="characters-container">
+      <!-- SIDEBAR (динамически рисуем 4 из 14) -->
+      <div class="sidebar">
+        <div class="arrow up" id="prev-character">↑</div>
+        <div class="character-list" id="characterList"></div>
+        <div class="arrow down" id="next-character">↓</div>
+      </div>
+
+      <!-- RIGHT SIDE CONTENT -->
+      <div class="character-content">
+
+        <!-- DEAN -->
+        <!-- DEAN -->
+<div class="character-detail" id="dean">
+  <div class="dean-wrapper">
+    <div class="dean-photo-block">
+      <img src="assets/images/dean-bg.png" alt="Дин Винчестер" class="dean-image">
+    </div>
+    <div class="dean-text-column">
+      <h3 class="dean-name">DEAN WINCHESTER</h3>
+      <p>Старший из братьев‑охотников: действует быстро, полагается на опыт и интуицию, ценит семью превыше всего.</p>
+      <p>Сила — верность и готовность идти до конца; слабость — страх утраты и цена, которую он согласен платить.</p>
+      <div class="info">
+        <strong>Статус:</strong> Жив • <strong>Первое появление:</strong> S1E1
+      </div>
+      <div class="quote-box dean-quote">«Я не хочу жить без тебя.»</div>
+    </div>
+  </div>
+</div>
+
+<!-- SAM -->
+<div class="character-detail" id="sam" style="display:none;">
+  <div class="dean-wrapper">
+    <div class="dean-photo-block">
+      <img src="assets/images/sam-body.png" alt="Сэм Винчестер" class="dean-image">
+    </div>
+    <div class="dean-text-column">
+      <h3 class="dean-name">SAM WINCHESTER</h3>
+      <p>Младший брат, тяготеет к исследованиям и моральным выборам, пытается решить проблему прежде, чем взяться за оружие.</p>
+      <p>Сила — аналитический ум и эмпатия; слабость — склонность принимать на себя непосильную вину.</p>
+      <div class="info">
+        <strong>Статус:</strong> Жив • <strong>Первое появление:</strong> S1E1
+      </div>
+      <div class="quote-box dean-quote">«Мы найдём способ, как всегда.»</div>
+    </div>
+  </div>
+</div>
+
+<!-- CASTIEL -->
+<div class="character-detail" id="castiel" style="display:none;">
+  <div class="dean-wrapper">
+    <div class="dean-photo-block">
+      <img src="assets/images/castiel-body.png" alt="Кастиэль" class="dean-image">
+    </div>
+    <div class="dean-text-column">
+      <h3 class="dean-name">CASTIEL</h3>
+      <p>Ангел, который вытащил Дина из Ада и стал частью семьи Винчестеров, несмотря на небесные приказы.</p>
+      <p>Сила — вера и ангельная мощь; слабость — готовность жертвовать собой ради людей, к которым он привязался.</p>
+      <div class="info">
+        <strong>Статус:</strong> Падший ангел / союзник людей • <strong>Первое появление:</strong> S4E1
+      </div>
+      <div class="quote-box dean-quote">«Я сделал это ради тебя, Дин.»</div>
+    </div>
+  </div>
+</div>
+
+<!-- JOHN -->
+<div class="character-detail" id="john" style="display:none;">
+  <div class="dean-wrapper">
+    <div class="dean-photo-block">
+      <img src="assets/images/john-body.png" alt="Джон Винчестер" class="dean-image">
+    </div>
+    <div class="dean-text-column">
+      <h3 class="dean-name">JOHN WINCHESTER</h3>
+      <p>Отец Дина и Сэма, превратил свою жизнь в охоту после смерти жены и воспитал сыновей как солдат.</p>
+      <p>Сила — фанатичная решимость и опыт; слабость — одержимость местью, которая разрушает отношения с детьми.</p>
+      <div class="info">
+        <strong>Статус:</strong> Мёртв • <strong>Первое появление:</strong> S1E1
+      </div>
+      <div class="quote-box dean-quote">«Береги брата и закончи начатое мной.»</div>
+    </div>
+  </div>
+</div>
+
+<!-- BOBBY -->
+<div class="character-detail" id="bobby" style="display:none;">
+  <div class="dean-wrapper">
+    <div class="dean-photo-block">
+      <img src="assets/images/bobby-body.png" alt="Бобби Сингер" class="dean-image">
+    </div>
+    <div class="dean-text-column">
+      <h3 class="dean-name">BOBBY SINGER</h3>
+      <p>Наставник и тыл охотников. Практичный, прямой, хранит библиотеку знаний и негласный кодекс.</p>
+      <p>Сила — опыт и ресурсы; слабость — груз прошлого и самопожертвование без оглядки.</p>
+      <div class="info">
+        <strong>Статус:</strong> Мёртв (в каноне) • <strong>Первое появление:</strong> S1E3
+      </div>
+      <div class="quote-box dean-quote">«Иди и сделай работу, сынок.»</div>
+    </div>
+  </div>
+</div>
+
+<!-- CROWLEY -->
+<div class="character-detail" id="crowley" style="display:none;">
+  <div class="dean-wrapper">
+    <div class="dean-photo-block">
+      <img src="assets/images/crowley-body.png" alt="Кроули" class="dean-image">
+    </div>
+    <div class="dean-text-column">
+      <h3 class="dean-name">CROWLEY</h3>
+      <p>Король Ада, мастер сделок и саркастических ремарок. Легко меняет альянсы, если это выгодно.</p>
+      <p>Сила — влияние и хитрость; слабость — человеческие привязанности, которые он не признаёт.</p>
+      <div class="info">
+        <strong>Статус:</strong> Мёртв • <strong>Первое появление:</strong> S5E18
+      </div>
+      <div class="quote-box dean-quote">«Всё вопрос цены.»</div>
+    </div>
+  </div>
+</div>
+
+<!-- LUCIFER -->
+<div class="character-detail" id="lucifer" style="display:none;">
+  <div class="dean-wrapper">
+    <div class="dean-photo-block">
+      <img src="assets/images/lucifer-body.png" alt="Люцифер" class="dean-image">
+    </div>
+    <div class="dean-text-column">
+      <h3 class="dean-name">LUCIFER</h3>
+      <p>Падший ангел с ледяной харизмой. Мир для него — поле доказательства собственной правоты.</p>
+      <p>Сила — древняя мощь; слабость — гордыня и недооценка человеческой свободы воли.</p>
+      <div class="info">
+        <strong>Статус:</strong> Побеждён неоднократно • <strong>Первое появление:</strong> S4E22
+      </div>
+      <div class="quote-box dean-quote">«Любовь — ошибка дизайна.»</div>
+    </div>
+  </div>
+</div>
+
+<!-- RUBY -->
+<div class="character-detail" id="ruby" style="display:none;">
+  <div class="dean-wrapper">
+    <div class="dean-photo-block">
+      <img src="assets/images/ruby-body.png" alt="Руби" class="dean-image">
+    </div>
+    <div class="dean-text-column">
+      <h3 class="dean-name">RUBY</h3>
+      <p>Демон, который умеет быть полезным. На поверхности помощь, в глубине — собственная повестка.</p>
+      <p>Сила — манипуляции и ритуалы; слабость — привязанности, которыми можно сыграть против неё.</p>
+      <div class="info">
+        <strong>Статус:</strong> Мёртва • <strong>Первое появление:</strong> S3E3
+      </div>
+      <div class="quote-box dean-quote">«Доверься мне… на этот раз.»</div>
+    </div>
+  </div>
+</div>
+
+<!-- JO -->
+<div class="character-detail" id="jo" style="display:none;">
+  <div class="dean-wrapper">
+    <div class="dean-photo-block">
+      <img src="assets/images/jo-body.png" alt="Джо Харвелл" class="dean-image">
+    </div>
+    <div class="dean-text-column">
+      <h3 class="dean-name">JO HARVELLE</h3>
+      <p>Охотница нового поколения. Смелая, прямолинейная, верит в правильное дело.</p>
+      <p>Сила — отвага; слабость — готовность идти на крайний риск ради своих.</p>
+      <div class="info">
+        <strong>Статус:</strong> Мёртва • <strong>Первое появление:</strong> S2E17
+      </div>
+      <div class="quote-box dean-quote">«Лучше сделать шаг вперёд, чем стоять в тени.»</div>
+    </div>
+  </div>
+</div>
+
+<!-- RUFUS -->
+<div class="character-detail" id="rufus" style="display:none;">
+  <div class="dean-wrapper">
+    <div class="dean-photo-block">
+      <img src="assets/images/rufus-body.png" alt="Руфус" class="dean-image">
+    </div>
+    <div class="dean-text-column">
+      <h3 class="dean-name">RUFUS TURNER</h3>
+      <p>Циничный ветеран охоты с полезными контактами и терпким чувством юмора.</p>
+      <p>Сила — опыт; слабость — одиночество и упрямство старой школы.</p>
+      <div class="info">
+        <strong>Статус:</strong> Мёртв • <strong>Первое появление:</strong> S5E19
+      </div>
+      <div class="quote-box dean-quote">«Выживает тот, кто готовится.»</div>
+    </div>
+  </div>
+</div>
+
+<!-- LILITH -->
+<div class="character-detail" id="lilith" style="display:none;">
+  <div class="dean-wrapper">
+    <div class="dean-photo-block">
+      <img src="assets/images/lilith-body.png" alt="Лилит" class="dean-image">
+    </div>
+    <div class="dean-text-column">
+      <h3 class="dean-name">LILITH</h3>
+      <p>Древний демон с холодным расчётом и детской улыбкой, запускает процессы огромного масштаба.</p>
+      <p>Сила — древняя магия; слабость — самоуверенность.</p>
+      <div class="info">
+        <strong>Статус:</strong> Мёртва • <strong>Первое появление:</strong> S3E16
+      </div>
+      <div class="quote-box dean-quote">«Двери открываются тем, кто не боится.»</div>
+    </div>
+  </div>
+</div>
+
+<!-- MEG -->
+<div class="character-detail" id="meg" style="display:none;">
+  <div class="dean-wrapper">
+    <div class="dean-photo-block">
+      <img src="assets/images/meg-body.png" alt="Мэг" class="dean-image">
+    </div>
+    <div class="dean-text-column">
+      <h3 class="dean-name">MEG</h3>
+      <p>Язвительный демон, который переживает больше, чем показывает. Играет долго и тонко.</p>
+      <p>Сила — хитрость; слабость — редкие вспышки человечности.</p>
+      <div class="info">
+        <strong>Статус:</strong> Мёртва • <strong>Первое появление:</strong> S1E18
+      </div>
+      <div class="quote-box dean-quote">«Иногда улыбка ранит сильнее клинка.»</div>
+    </div>
+  </div>
+</div>
+
+<!-- GARTH -->
+<div class="character-detail" id="garr" style="display:none;">
+  <div class="dean-wrapper">
+    <div class="dean-photo-block">
+      <img src="assets/images/garr-body.png" alt="Гарт" class="dean-image">
+    </div>
+    <div class="dean-text-column">
+      <h3 class="dean-name">GARTH</h3>
+      <p>Неловкий, но добрый охотник, привносит лёгкость там, где она обычно невозможна.</p>
+      <p>Сила — человечность и верность; слабость — отсутствие «жёсткости» мира охоты.</p>
+      <div class="info">
+        <strong>Статус:</strong> Жив (к финалу) • <strong>Первое появление:</strong> S7E1
+      </div>
+      <div class="quote-box dean-quote">«Иногда улыбка срабатывает лучше выстрела.»</div>
+    </div>
+  </div>
+</div>
+
+<!-- BALTHAZAR -->
+<div class="character-detail" id="balthazar" style="display:none;">
+  <div class="dean-wrapper">
+    <div class="dean-photo-block">
+      <img src="assets/images/balthazar-body.png" alt="Бальтазар" class="dean-image">
+    </div>
+    <div class="dean-text-column">
+      <h3 class="dean-name">BALTHAZAR</h3>
+      <p>Ангел‑прагматик, любит свободу и выгодные сделки. Часто действует вне правил.</p>
+      <p>Сила — небесные знания; слабость — игра по собственным законам.</p>
+      <div class="info">
+        <strong>Статус:</strong> Мёртв • <strong>Первое появление:</strong> S6E10
+      </div>
+      <div class="quote-box dean-quote">«Правила — для тех, у кого нет вариантов.»</div>
+    </div>
+  </div>
+</div>
+
+<!-- GABRIEL -->
+<div class="character-detail" id="gabriel" style="display:none;">
+  <div class="dean-wrapper">
+    <div class="dean-photo-block">
+      <img src="assets/images/gabriel-body.png" alt="Архангел Гавриил" class="dean-image">
+    </div>
+    <div class="dean-text-column">
+      <h3 class="dean-name">ARCHANGEL GABRIEL</h3>
+      <p>Трикстер с небесным ресурсом. Прячет усталость от вечной войны за маской шутника.</p>
+      <p>Сила — иллюзии и мудрость; слабость — нежелание вновь стать пешкой.</p>
+      <div class="info">
+        <strong>Статус:</strong> Мёртв (в основной линии) • <strong>Первое появление:</strong> S2 как Трикстер / раскрыт S4
+      </div>
+      <div class="quote-box dean-quote">«Истина — лучший розыгрыш.»</div>
+    </div>
+  </div>
+</div>
+
+<!-- BELA -->
+<div class="character-detail" id="bela" style="display:none;">
+  <div class="dean-wrapper">
+    <div class="dean-photo-block">
+      <img src="assets/images/bela-body.png" alt="Белла" class="dean-image">
+    </div>
+    <div class="dean-text-column">
+      <h3 class="dean-name">BELA TALBOT</h3>
+      <p>Профессиональная воровка артефактов. Играет по крупному и редко раскрывает свои карты.</p>
+      <p>Сила — сообразительность и связи; слабость — сделки, у которых всегда есть срок.</p>
+      <div class="info">
+        <strong>Статус:</strong> Мёртва • <strong>Первое появление:</strong> S3E8
+      </div>
+      <div class="quote-box dean-quote">«Цена вопроса всегда выше, чем кажется.»</div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+<section id="seasons" class="seasons">
+  <div class="seasons-bg"></div>
+
+  <div class="container">
+    <h2 class="seasons-heading">SEASONS</h2>
+
+    <div class="seasons-layout"
+         data-seasons='[ ... твой JSON с сезонами 1–15 как раньше ... ]'>
+
+      <!-- ЛЕВАЯ ПАНЕЛЬ С ПРЕВЬЮ -->
+      <div class="seasons-sidebar">
+        <div class="arrow up" id="prev-season">↑</div>
+        <div class="season-list" id="seasonList"></div>
+        <div class="arrow down" id="next-season">↓</div>
+      </div>
+
+  <div class="season-content">
+  <div class="season-main">
+    <h3 class="season-title" id="season-title"></h3>
+    <p class="season-subtitle" id="season-subtitle"></p>
+    <p class="season-text" id="season-text"></p>
+  </div>
+
+  <div class="season-keys">
+    <h4>KEY EVENTS</h4>
+    <ul id="season-keys-list"></ul>
+  </div>
+</div>
+</div>
+  </div>
+</section>
+<section>
+
+  <!-- LOCATIONS -->
+<section id="locations" class="location-page">
+  <div class="locations-title">LOCATIONS</div>
+
+  <!-- ДОМ ВИНЧЕСТЕРОВ -->
+  <div class="location-detail" id="winchester-house">
+    <div class="location-content">
+      <div class="location-text-block">
+        <div class="location-name">ДОМ ВИНЧЕСТЕРОВ</div>
+        <div class="location-place">Лавровая улица, Лоуренс, Канзас</div>
+        <div class="location-text">
+          Это место, где началась вся история. Именно здесь в 1983 году Мэри Винчестер была убита Азазелем, а Дин увидел это из колыбели Сэма. Хотя братья провели в этом доме мало времени, он остаётся для них символом утраченного детства и обещания «когда-нибудь вернуться».
+        </div>
+        <div class="location-significance">
+          <strong>Ключевые события:</strong><br>
+          • Смерть Мэри Винчестер<br>
+          • Первое появление Азазеля<br>
+          • Возвращение братьев в пилотной серии<br>
+          • Финальная сцена сериала — Импала в музее рядом с домом
+        </div>
+      </div>
+      <div class="location-image">
+        <img src="assets/images/winchester-house.webp" alt="Дом Винчестеров" class="location-img">
+      </div>
+      <div class="next-image">
+        <img src="assets/images/lucifer-prison.webp" alt="Тюрьма Люцифера" class="next-img">
+      </div>
+    </div>
+  </div>
+
+  <!-- ТЮРЬМА ЛЮЦИФЕРА -->
+  <div class="location-detail" id="lucifer-prison">
+    <div class="location-content">
+      <div class="location-text-block">
+        <div class="location-name">ТЮРЬМА ЛЮЦИФЕРА</div>
+        <div class="location-place">Глубины земли, безымянное место</div>
+        <div class="location-text">
+          Это крохотная клетка в недрах Ада, где Люцифер был заточён на тысячелетия. Место мрачное, пустое, без времени. Именно сюда в финале сериала уходит Джек — чтобы стать новым тюремщиком и держать Тьму под замком.
+        </div>
+        <div class="location-significance">
+          <strong>Ключевые события:</strong><br>
+          • Заточение Люцифера после Апокалипсиса<br>
+          • Попытка Сэма удержать Люцифера внутри себя<br>
+          • Финал: Джек становится стражем
+        </div>
+      </div>
+      <div class="location-image">
+        <img src="assets/images/lucifer-prison.webp" alt="Тюрьма Люцифера" class="location-img">
+      </div>
+      <div class="next-image">
+        <img src="assets/images/bobby-house.jpg" alt="Дом Бобби Сингера" class="next-img">
+      </div>
+    </div>
+  </div>
+
+  <!-- ДОМ БОББИ СИНГЕРА -->
+  <div class="location-detail" id="bobby-house">
+    <div class="location-content">
+      <div class="location-text-block">
+        <div class="location-name">ДОМ БОББИ СИНГЕРА</div>
+        <div class="location-place">Сиу-Сити, Южная Дакота</div>
+        <div class="location-text">
+          Для Дина и Сэма дом Бобби — второй дом. Здесь хранятся тысячи книг, артефактов и знаний об охоте. Это место мудрости, поддержки и отцовской заботы. Даже после смерти Бобби его дом остаётся святыней для братьев.
+        </div>
+        <div class="location-significance">
+          <strong>Ключевые события:</strong><br>
+          • Исследование мифологии и заклинаний<br>
+          • Укрытие во время Апокалипсиса<br>
+          • Использование дома как базы в поздних сезонах
+        </div>
+      </div>
+      <div class="location-image">
+        <img src="assets/images/bobby-house.jpg" alt="Дом Бобби Сингера" class="location-img">
+      </div>
+      <div class="next-image">
+        <img src="assets/images/purgatory.webp" alt="Чистилище" class="next-img">
+      </div>
+    </div>
+  </div>
+
+  <!-- ЧИСТИЛИЩЕ -->
+  <div class="location-detail" id="purgatory">
+    <div class="location-content">
+      <div class="location-text-block">
+        <div class="location-name">ЧИСТИЛИЩЕ</div>
+        <div class="location-place">Подземный лабиринт</div>
+        <div class="location-text">
+          Это древнее место, где были заперты Левиафаны — сущности, созданные до ангелов и демонов. Печать напоминает тюрьму, спрятанную под ледником. Её разрушение в 7 сезоне выпустило на Землю новую угрозу — технологическое зло.
+        </div>
+        <div class="location-significance">
+          <strong>Ключевые события:</strong><br>
+          • Разрушение печати Кастиэлем<br>
+          • Появление Левиафанов на Земле<br>
+          • Заражение Дина кровью Левиафанов
+        </div>
+      </div>
+      <div class="location-image">
+        <img src="assets/images/purgatory.webp" alt="Чистилище" class="location-img">
+      </div>
+      <div class="next-image">
+        <img src="assets/images/impala.jfif" alt="Импала" class="next-img">
+      </div>
+    </div>
+  </div>
+
+  <!-- ИМПАЛА -->
+  <div class="location-detail" id="impala">
+    <div class="location-content">
+      <div class="location-text-block">
+        <div class="location-name">ИМПАЛА</div>
+        <div class="location-place">Chevrolet Impala 1967 года</div>
+        <div class="location-text">
+          Это не просто машина — это святая святых мира «Сверхъестественного». В ней братья провели тысячи миль, спасали друг друга, пили пиво и слушали «Carry On Wayward Son». Для Дина это последний связующий элемент с детством и ощущением свободы.
+        </div>
+        <div class="location-significance">
+          <strong>Ключевые события:</strong><br>
+          • Подарок от отца Джона<br>
+          • Уничтожение и восстановление<br>
+          • Перевозка душ, артефактов и тел<br>
+          • Финал: Импала в «Музее сверхъестественного»
+        </div>
+      </div>
+      <div class="location-image">
+        <img src="assets/images/impala.jfif" alt="Импала" class="location-img">
+      </div>
+      <div class="next-image">
+        <img src="assets/images/bobby-bunker.webp" alt="Бункер Бобби" class="next-img">
+      </div>
+    </div>
+  </div>
+
+  <!-- БУНКЕР БОББИ -->
+  <div class="location-detail" id="bobby-bunker">
+    <div class="location-content">
+      <div class="location-text-block">
+        <div class="location-name">БУНКЕР БОББИ</div>
+        <div class="location-place">Лебанон, Канзас</div>
+        <div class="location-text">
+          Тайный бункер Людей Судьбы становится главной базой Винчестеров в поздних сезонах. Здесь собраны древние артефакты, оружие и книги, а также технологии, позволяющие путешествовать и во времени, и между мирами.
+        </div>
+        <div class="location-significance">
+          <strong>Ключевые события:</strong><br>
+          • Обнаружение бункера<br>
+          • Подготовка к битвам с Тьмой<br>
+          • Штаб для войны с альтернативными мирами
+        </div>
+      </div>
+      <div class="location-image">
+        <img src="assets/images/bobby-bunker.webp" alt="Бункер Бобби" class="location-img">
+      </div>
+      <div class="next-image">
+        <img src="assets/images/hell-gates.webp" alt="Врата Ада" class="next-img">
+      </div>
+    </div>
+  </div>
+
+  <!-- ВРАТА АДА -->
+  <div class="location-detail" id="hell-gates">
+    <div class="location-content">
+      <div class="location-text-block">
+        <div class="location-name">ВРАТА АДА</div>
+        <div class="location-place">Колорадо, США</div>
+        <div class="location-text">
+          Огромная шахта в Колорадо, ведущая прямо в Ад. Именно здесь Винчестеры и их союзники пытались запечатать врата, принимая тяжёлые решения и жертвуя невинными, чтобы остановить прорыв демонов на Землю.
+        </div>
+        <div class="location-significance">
+          <strong>Ключевые события:</strong><br>
+          • Пробуждение Желтоглазого демона<br>
+          • Закрытие врат ценой человеческих жертв<br>
+          • Массовый прорыв демонов в последующих сезонах
+        </div>
+      </div>
+      <div class="location-image">
+        <img src="assets/images/hell-gates.webp" alt="Врата Ада" class="location-img">
+      </div>
+      <div class="next-image">
+        <img src="assets/images/harvelles-diner.jpg" alt="Придорожная закусочная Харвеллов" class="next-img">
+      </div>
+    </div>
+  </div>
+
+  <!-- ПРИДОРОЖНАЯ ЗАКУСОЧНАЯ ХАРВЕЛЛОВ -->
+  <div class="location-detail" id="harvelles-diner">
+    <div class="location-content">
+      <div class="location-text-block">
+        <div class="location-name">ПРИДОРОЖНАЯ ЗАКУСОЧНАЯ ХАРВЕЛЛОВ</div>
+        <div class="location-place">Дорога, Средний Запад</div>
+        <div class="location-text">
+          Знаменитый бар Джо и Эллен Харвелл — центр охотничьего сообщества. Здесь собирались охотники, обменивались информацией, пили и планировали. После трагедии стал легендой.
+        </div>
+        <div class="location-significance">
+          <strong>Ключевые события:</strong><br>
+          • Встречи охотников<br>
+          • Смерть Эллен и Джо<br>
+          • Появление Кроули как завсегдатая
+        </div>
+      </div>
+      <div class="location-image">
+        <img src="assets/images/harvelles-diner.jpg" alt="Придорожная закусочная Харвеллов" class="location-img">
+      </div>
+      <div class="next-image">
+        <img src="assets/images/winchester-house.webp" alt="Дом Винчестеров" class="next-img">
+      </div>
+    </div>
+  </div>
+
+  <!-- ОДНИ СТРЕЛКИ НА ВСЮ СЕКЦИЮ -->
+  <div class="arrows">
+    <div class="arrow" id="prev-location">‹</div>
+    <div class="arrow" id="next-location">›</div>
+  </div>
+</section>
+
+<!-- QUOTES -->
+<section id="quotes" class="quotes">
+  <div class="quotes-overlay"></div>
+
+  <div class="quotes-inner">
+    <h2 class="quotes-title">QUOTES</h2>
+
+    <div class="quotes-container">
+      <!-- дальше все quote-item, как у тебя, просто оставляем их в HTML -->
+
+      <!-- Цитата 1 -->
+      <div class="quote-item" data-quote="1">
+        <div class="quote-text">“I DON’T WANT TO LIVE WITHOUT YOU.”</div>
+        <div class="quote-translate">«Я не хочу жить без тебя.»</div>
+        <div class="quote-author">— Дин Винчестер</div>
+        <div class="quote-date">Сезон 5, Эпизод 22</div>
+      </div>
+
+    <!-- Цитата 2 -->
+    <div class="quote-item" data-quote="2">
+        <div class="quote-text">“LOVE IS WEAKNESS.”</div>
+        <div class="quote-translate">«Любовь — это слабость.»</div>
+        <div class="quote-author">— Люцифер</div>
+        <div class="quote-date">Сезон 11, Эпизод 10</div>
+    </div>
+
+    <!-- Цитата 3 -->
+    <div class="quote-item" data-quote="3">
+        <div class="quote-text">“YOU’RE MY FAMILY.”</div>
+        <div class="quote-translate">«Вы — моя семья.»</div>
+        <div class="quote-author">— Кастиэль</div>
+        <div class="quote-date">Сезон 9, Эпизод 1</div>
+    </div>
+
+    <!-- Цитата 4 -->
+    <div class="quote-item" data-quote="4">
+        <div class="quote-text">“I’M NOT A HERO. I’M THE GUY WHO SAVES THE HERO.”</div>
+        <div class="quote-translate">«Я не герой. Я тот, кто спасает героя.»</div>
+        <div class="quote-author">— Бобби Сингер</div>
+        <div class="quote-date">Сезон 5, Эпизод 19</div>
+    </div>
+
+    <!-- Цитата 5 -->
+    <div class="quote-item" data-quote="5">
+        <div class="quote-text">“FAMILY DON’T END WITH BLOOD.”</div>
+        <div class="quote-translate">«Семья — это не только кровные узы.»</div>
+        <div class="quote-author">— Мэри Винчестер</div>
+        <div class="quote-date">Сезон 13, Эпизод 23</div>
+    </div>
+
+    <!-- Цитата 6 -->
+    <div class="quote-item" data-quote="6">
+        <div class="quote-text">“I’M NOT OKAY WITH THIS.”</div>
+        <div class="quote-translate">«Мне это не нравится.»</div>
+        <div class="quote-author">— Сэм Винчестер</div>
+        <div class="quote-date">Сезон 2, Эпизод 20</div>
+    </div>
+
+    <!-- Цитата 7 -->
+    <div class="quote-item" data-quote="7">
+        <div class="quote-text">“I’M NOT A GOOD MAN. I’M JUST NOT VERY BAD.”</div>
+        <div class="quote-translate">«Я не добрый. Я просто не очень плохой.»</div>
+        <div class="quote-author">— Кроули</div>
+        <div class="quote-date">Сезон 5, Эпизод 18</div>
+    </div>
+
+    <!-- Цитата 8 -->
+    <div class="quote-item" data-quote="8">
+        <div class="quote-text">“I DON’T BELIEVE IN GOD, BUT I’LL KILL FOR SAM.”</div>
+        <div class="quote-translate">«Я не верю в Бога, но готов умереть за Сэма.»</div>
+        <div class="quote-author">— Дин Винчестер</div>
+        <div class="quote-date">Сезон 1, Эпизод 1</div>
+    </div>
+
+    <!-- Цитата 9 -->
+    <div class="quote-item" data-quote="9">
+        <div class="quote-text">“I’M NOT AFRAID TO DIE. I’M AFRAID I WON’T GET THERE.”</div>
+        <div class="quote-translate">«Я не боюсь умереть. Я боюсь не успеть.»</div>
+        <div class="quote-author">— Джо Харвелл</div>
+        <div class="quote-date">Сезон 2, Эпизод 17</div>
+    </div>
+
+    <!-- Цитата 10 -->
+    <div class="quote-item" data-quote="10">
+        <div class="quote-text">“I’M NOT A BAD GUY. I’M JUST NOT VERY GOOD.”</div>
+        <div class="quote-translate">«Я не злой. Я просто не очень добрый.»</div>
+        <div class="quote-author">— Мэг</div>
+        <div class="quote-date">Сезон 1, Эпизод 18</div>
+    </div>
+
+    <!-- Цитата 11 -->
+    <div class="quote-item" data-quote="11">
+        <div class="quote-text">“I’M NOT A HERO. I’M JUST A GUY WHO WANTS TO HELP.”</div>
+        <div class="quote-translate">«Я не герой. Я просто парень, который хочет помочь.»</div>
+        <div class="quote-author">— Гарт</div>
+        <div class="quote-date">Сезон 7, Эпизод 1</div>
+    </div>
+
+    <!-- Цитата 12 -->
+    <div class="quote-item" data-quote="12">
+        <div class="quote-text">“I’M NOT A BAD PERSON. I’M JUST NOT VERY GOOD.”</div>
+        <div class="quote-translate">«Я не плохой человек. Я просто не очень хороший.»</div>
+        <div class="quote-author">— Белла</div>
+        <div class="quote-date">Сезон 3, Эпизод 8</div>
+    </div>
+
+    <!-- Цитата 13 -->
+    <div class="quote-item" data-quote="13">
+        <div class="quote-text">“I’M NOT A GOOD MAN. I’M JUST NOT VERY BAD.”</div>
+        <div class="quote-translate">«Я не добрый. Я просто не очень плохой.»</div>
+        <div class="quote-author">— Архангел Гавриил</div>
+        <div class="quote-date">Сезон 4, Эпизод 15</div>
+    </div>
+
+    <!-- Цитата 14 -->
+    <div class="quote-item" data-quote="14">
+        <div class="quote-text">“I’M NOT A BAD GUY. I’M JUST NOT VERY GOOD.”</div>
+        <div class="quote-translate">«Я не злой. Я просто не очень добрый.»</div>
+        <div class="quote-author">— Руби</div>
+        <div class="quote-date">Сезон 3, Эпизод 3</div>
+    </div>
+    
+    <div class="quote-item" data-quote="15">
+        <div class="quote-text">“I’M NOT A HERO. I’M JUST A GUY WHO WANTS TO HELP.”</div>
+        <div class="quote-translate">«Я не герой. Я просто парень, который хочет помочь.»</div>
+        <div class="quote-author">— Бальтазар</div>
+        <div class="quote-date">Сезон 6, Эпизод 10</div>
+      </div>
+
+    </div>
+
+    <button class="next-quotes-btn">Следующие цитаты</button>
+  </div>
+</section>
+
+<section id="creatures" class="creatures">
+  <div class="creatures-overlay"></div>
+
+  <div class="creatures-inner">
+    <h2 class="creatures-title">CREATURES</h2>
+
+    <div class="creatures-grid">
+      <!-- Каждая карточка: лицевая + оборот -->
+      <!-- 1. Демон -->
+      <div class="creature-card" data-id="demon">
+        <div class="creature-card-inner">
+          <!-- Лицевая сторона -->
+          <div class="creature-card-face creature-card-front">
+            <div class="creature-image">
+              <img src="assets/images/creatures/demon.jpg" alt="[translate:Демон]">
+              <div class="creature-name">ДЕМОН</div>
+            </div>
+            <div class="creature-desc">
+              Падшие души, заключённые в тела людей. Немогут врать, чёрные или красные глаза в зависимости от ранга. Служат аду, но часто действуют из личной выгоды.
+            </div>
+          </div>
+
+          <!-- Оборот: слабости -->
+          <div class="creature-card-face creature-card-back">
+            <div class="creature-weak-title">СЛАБОСТИ</div>
+            <ul class="creature-weak-list">
+              <li>Соль</li>
+              <li>Железная цепь</li>
+              <li>Изгнание латинской молитвой</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. ВЕРВОЛЬФ -->
+      <div class="creature-card" data-id="werewolf">
+        <div class="creature-card-inner">
+          <div class="creature-card-face creature-card-front">
+            <div class="creature-image">
+              <img src="assets/images/creatures/werewolf.webp" alt="[translate:Вервольф]">
+              <div class="creature-name">ВЕРВОЛЬФ</div>
+            </div>
+            <div class="creature-desc">
+              Человек, превращающийся в зверя при полной луне. Передаётся через укус. Жесток, быстр и почти неуязвим в звериной форме.
+            </div>
+          </div>
+          <div class="creature-card-face creature-card-back">
+            <div class="creature-weak-title">СЛАБОСТИ</div>
+            <ul class="creature-weak-list">
+              <li>Серебряная пуля</li>
+              <li>Серебряный нож</li>
+              <li>Уничтожение «родоначальника» стаи</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. ПОДМЕНЫШ -->
+      <div class="creature-card" data-id="changeling">
+        <div class="creature-card-inner">
+          <div class="creature-card-face creature-card-front">
+            <div class="creature-image">
+              <img src="assets/images/creatures/changeling.webp" alt="[translate:Подменыш]">
+              <div class="creature-name">ПОДМЕНЫШ</div>
+            </div>
+            <div class="creature-desc">
+              Сверхъестественное существо, подменяющее человеческого ребёнка в колыбели. Питается жизненной энергией семьи через скрытую связь с ребёнком.
+            </div>
+          </div>
+          <div class="creature-card-face creature-card-back">
+            <div class="creature-weak-title">СЛАБОСТИ</div>
+            <ul class="creature-weak-list">
+              <li>Железо</li>
+              <li>Соль на пороге</li>
+              <li>Возвращение настоящего ребёнка</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+<!-- ШТРИГА -->
+<div class="creature-card" data-id="striga">
+  <div class="creature-card-inner">
+    <div class="creature-card-face creature-card-front">
+      <div class="creature-image">
+        <img src="assets/images/creatures/striga.jfif" alt="[translate:Штрига]">
+        <div class="creature-name">ШТРИГА</div>
+      </div>
+      <div class="creature-desc">
+        Албанское существо, питающееся жизненной силой детей. Проникает ночью в дома в облике старика или старухи и высасывает дыхание из лёгких спящих малышей, обрекая их на смерть.
+      </div>
+    </div>
+    <div class="creature-card-face creature-card-back">
+      <div class="creature-weak-title">СЛАБОСТИ</div>
+      <ul class="creature-weak-list">
+        <li>Серебряная пуля</li>
+        <li>Соль на пороге</li>
+        <li>Молитва / ритуал изгнания</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- АРАХНА -->
+<div class="creature-card" data-id="arachna">
+  <div class="creature-card-inner">
+    <div class="creature-card-face creature-card-front">
+      <div class="creature-image">
+        <img src="assets/images/creatures/arachna.webp" alt="[translate:Арахна]">
+        <div class="creature-name">АРАХНА</div>
+      </div>
+      <div class="creature-desc">
+        Древняя демоница в облике женщины-паука. Заманивает жертв в ловушки, высасывает их жизненную силу и опутывает паутиной душу, превращая человека в куклу.
+      </div>
+    </div>
+    <div class="creature-card-face creature-card-back">
+      <div class="creature-weak-title">СЛАБОСТИ</div>
+      <ul class="creature-weak-list">
+        <li>Огонь</li>
+        <li>Соль</li>
+        <li>Клинок из костей Кали</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ДЖИНН -->
+<div class="creature-card" data-id="djinn">
+  <div class="creature-card-inner">
+    <div class="creature-card-face creature-card-front">
+      <div class="creature-image">
+        <img src="assets/images/creatures/djinn.webp" alt="[translate:Джинн]">
+        <div class="creature-name">ДЖИНН</div>
+      </div>
+      <div class="creature-desc">
+        Древнее существо, исполняющее желания в обмен на цену души. Погружает жертву в иллюзорный мир, пока в реальности высасывает её жизненную силу.
+      </div>
+    </div>
+    <div class="creature-card-face creature-card-back">
+      <div class="creature-weak-title">СЛАБОСТИ</div>
+      <ul class="creature-weak-list">
+        <li>Серебряный нож</li>
+        <li>Соль</li>
+        <li>Разрушение сосуда-тюрьмы</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ЛЕВИАФАН -->
+<div class="creature-card" data-id="leviathan">
+  <div class="creature-card-inner">
+    <div class="creature-card-face creature-card-front">
+      <div class="creature-image">
+        <img src="assets/images/creatures/leviathan.jpg" alt="[translate:Левиафан]">
+        <div class="creature-name">ЛЕВИАФАН</div>
+      </div>
+      <div class="creature-desc">
+        Древняя сила, старше ангелов и демонов. Питаются человеческой кровью, принимают любой облик и фактически неуязвимы для обычного оружия.
+      </div>
+    </div>
+    <div class="creature-card-face creature-card-back">
+      <div class="creature-weak-title">СЛАБОСТИ</div>
+      <ul class="creature-weak-list">
+        <li>Специальный клинок Левиафан</li>
+        <li>Кровь трёх существ, смешанная в ритуале</li>
+        <li>Удаление головы / разделение тела и крови</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ВАМПИРЫ -->
+<div class="creature-card" data-id="vampire">
+  <div class="creature-card-inner">
+    <div class="creature-card-face creature-card-front">
+      <div class="creature-image">
+        <img src="assets/images/creatures/vampire.jpg" alt="[translate:Вампиры]">
+        <div class="creature-name">ВАМПИРЫ</div>
+      </div>
+      <div class="creature-desc">
+        Мертвецы, пьющие кровь живых. Передают свою природу через укус, живут стаями и избегают прямого солнечного света.
+      </div>
+    </div>
+    <div class="creature-card-face creature-card-back">
+      <div class="creature-weak-title">СЛАБОСТИ</div>
+      <ul class="creature-weak-list">
+        <li>Обезглавливание</li>
+        <li>Дерево (кол)</li>
+        <li>Серебро и солнечный свет</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ВЕТАЛЫ -->
+<div class="creature-card" data-id="vetala">
+  <div class="creature-card-inner">
+    <div class="creature-card-face creature-card-front">
+      <div class="creature-image">
+        <img src="assets/images/creatures/vetala.webp" alt="[translate:Веталы]">
+        <div class="creature-name">ВЕТАЛЫ</div>
+      </div>
+      <div class="creature-desc">
+        Индийские демоны, обитающие в трупах. Могут вселяться в тела и управлять ими, скрываясь среди живых и подменяя личности.
+      </div>
+    </div>
+    <div class="creature-card-face creature-card-back">
+      <div class="creature-weak-title">СЛАБОСТИ</div>
+      <ul class="creature-weak-list">
+        <li>Специальный ритуал изгнания</li>
+        <li>Соль</li>
+        <li>Огонь</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- КИЦУНЭ -->
+<div class="creature-card" data-id="kitsune">
+  <div class="creature-card-inner">
+    <div class="creature-card-face creature-card-front">
+      <div class="creature-image">
+        <img src="assets/images/creatures/kitsune.jpg" alt="[translate:Кицунэ]">
+        <div class="creature-name">КИЦУНЭ</div>
+      </div>
+      <div class="creature-desc">
+        Японские лисы-демоны, принимающие человеческий облик. Хитры, обманчивы и используют магию и чары, чтобы управлять людьми.
+      </div>
+    </div>
+    <div class="creature-card-face creature-card-back">
+      <div class="creature-weak-title">СЛАБОСТИ</div>
+      <ul class="creature-weak-list">
+        <li>Священные предметы</li>
+        <li>Огонь</li>
+        <li>Соль и ритуалы очищения</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- СЕДЗЕ -->
+<div class="creature-card" data-id="sedze">
+  <div class="creature-card-inner">
+    <div class="creature-card-face creature-card-front">
+      <div class="creature-image">
+        <img src="assets/images/creatures/sedze.webp" alt="[translate:Седзе]">
+        <div class="creature-name">СЕДЗЕ</div>
+      </div>
+      <div class="creature-desc">
+        Древний демон, связанный с болезнью и смертью. Появляется как человек с гниющими ранами и приносит за собой эпидемии и моры.
+      </div>
+    </div>
+    <div class="creature-card-face creature-card-back">
+      <div class="creature-weak-title">СЛАБОСТИ</div>
+      <ul class="creature-weak-list">
+        <li>Священные слова</li>
+        <li>Огонь</li>
+        <li>Ритуал очищения</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- РАКШАСА -->
+<div class="creature-card" data-id="rakshasa">
+  <div class="creature-card-inner">
+    <div class="creature-card-face creature-card-front">
+      <div class="creature-image">
+        <img src="assets/images/creatures/rakshasa.webp" alt="[translate:Ракшаса]">
+        <div class="creature-name">РАКШАСА</div>
+      </div>
+      <div class="creature-desc">
+        Индийский демон, питающийся человеческой плотью. Меняет облик, скрывается среди людей и охотится на одиноких жертв.
+      </div>
+    </div>
+    <div class="creature-card-face creature-card-back">
+      <div class="creature-weak-title">СЛАБОСТИ</div>
+      <ul class="creature-weak-list">
+        <li>Священные предметы</li>
+        <li>Огонь</li>
+        <li>Специальные ритуалы изгнания</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ПИШТАКО -->
+<div class="creature-card" data-id="pishtako">
+  <div class="creature-card-inner">
+    <div class="creature-card-face creature-card-front">
+      <div class="creature-image">
+        <img src="assets/images/creatures/pishtako.webp" alt="[translate:Пиштако]">
+        <div class="creature-name">ПИШТАКО</div>
+      </div>
+      <div class="creature-desc">
+        Демон, питающийся страхом и отчаянием. Приходит во тьме, давит психически, лишая жертву надежды и воли к сопротивлению.
+      </div>
+    </div>
+    <div class="creature-card-face creature-card-back">
+      <div class="creature-weak-title">СЛАБОСТИ</div>
+      <ul class="creature-weak-list">
+        <li>Вера и свет</li>
+        <li>Священные слова</li>
+        <li>Освящённые символы защиты</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- КРОКОТТА -->
+<div class="creature-card" data-id="crocotta">
+  <div class="creature-card-inner">
+    <div class="creature-card-face creature-card-front">
+      <div class="creature-image">
+        <img src="assets/images/creatures/crocotta.jpg" alt="[translate:Крокотта]">
+        <div class="creature-name">КРОКОТТА</div>
+      </div>
+      <div class="creature-desc">
+        Древнее существо, напоминающее гиену. Имитацией голосов родных и друзей заманивает одиноких путников в засаду и добивает в темноте.
+      </div>
+    </div>
+    <div class="creature-card-face creature-card-back">
+      <div class="creature-weak-title">СЛАБОСТИ</div>
+      <ul class="creature-weak-list">
+        <li>Огонь</li>
+        <li>Серебро</li>
+        <li>Громкий шум и освещённость</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- БАНШИ -->
+<div class="creature-card" data-id="banshee">
+  <div class="creature-card-inner">
+    <div class="creature-card-face creature-card-front">
+      <div class="creature-image">
+        <img src="assets/images/creatures/banshee.webp" alt="[translate:Банши]">
+        <div class="creature-name">БАНШИ</div>
+      </div>
+      <div class="creature-desc">
+        Ирландская ведьма, предвещающая смерть криком. Её голос вызывает паралич, безумие и может довести до остановки сердца.
+      </div>
+    </div>
+    <div class="creature-card-face creature-card-back">
+      <div class="creature-weak-title">СЛАБОСТИ</div>
+      <ul class="creature-weak-list">
+        <li>Соль</li>
+        <li>Священные слова</li>
+        <li>Огонь и изгнание ритуалом</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- РЭЙФ -->
+<div class="creature-card" data-id="wraith">
+  <div class="creature-card-inner">
+    <div class="creature-card-face creature-card-front">
+      <div class="creature-image">
+        <img src="assets/images/creatures/wraith.png" alt="[translate:Рэйф]">
+        <div class="creature-name">РЭЙФ</div>
+      </div>
+      <div class="creature-desc">
+        Существо, связанное с водой и отражениями. Появляется как притягательный человек, заманивает жертву к воде и утягивает в глубину.
+      </div>
+    </div>
+    <div class="creature-card-face creature-card-back">
+      <div class="creature-weak-title">СЛАБОСТИ</div>
+      <ul class="creature-weak-list">
+        <li>Священные предметы</li>
+        <li>Огонь</li>
+        <li>Соль</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!-- РУГАРУ -->
+<div class="creature-card" data-id="rugaru">
+  <div class="creature-card-inner">
+    <div class="creature-card-face creature-card-front">
+      <div class="creature-image">
+        <img src="assets/images/creatures/rugaru.jfif" alt="[translate:Ругару]">
+        <div class="creature-name">РУГАРУ</div>
+      </div>
+      <div class="creature-desc">
+        Существо, способное принимать облик любого человека. Постепенно теряет контроль и в итоге начинает пожирать человеческую плоть.
+      </div>
+    </div>
+    <div class="creature-card-face creature-card-back">
+      <div class="creature-weak-title">СЛАБОСТИ</div>
+      <ul class="creature-weak-list">
+        <li>Огонь</li>
+        <li>Серебро</li>
+        <li>Уничтожение до первой «охоты»</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- СИРЕНА -->
+<div class="creature-card" data-id="siren">
+  <div class="creature-card-inner">
+    <div class="creature-card-face creature-card-front">
+      <div class="creature-image">
+        <img src="assets/images/creatures/siren.webp" alt="[translate:Сирена]">
+        <div class="creature-name">СИРЕНА</div>
+      </div>
+      <div class="creature-desc">
+        Морское существо, заманивающее людей голосом и иллюзиями. Заставляет жертву идти навстречу смерти, пока сама питается её жизненной силой.
+      </div>
+    </div>
+    <div class="creature-card-face creature-card-back">
+      <div class="creature-weak-title">СЛАБОСТИ</div>
+      <ul class="creature-weak-list">
+        <li>Священные слова</li>
+        <li>Огонь</li>
+        <li>Соль и освящённое оружие</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ВЕНДИГО -->
+<div class="creature-card" data-id="wendigo">
+  <div class="creature-card-inner">
+    <div class="creature-card-face creature-card-front">
+      <div class="creature-image">
+        <img src="assets/images/creatures/wendigo.avif" alt="[translate:Вендиго]">
+        <div class="creature-name">ВЕНДИГО</div>
+      </div>
+      <div class="creature-desc">
+        Каннибал-дух северных лесов. Замораживает жертву взглядом, вызывает неутолимый голод и превращает в себе подобного.
+      </div>
+    </div>
+    <div class="creature-card-face creature-card-back">
+      <div class="creature-weak-title">СЛАБОСТИ</div>
+      <ul class="creature-weak-list">
+        <li>Огонь</li>
+        <li>Серебро</li>
+        <li>Агавэ</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- БИСАН -->
+<div class="creature-card" data-id="bisan">
+  <div class="creature-card-inner">
+    <div class="creature-card-face creature-card-front">
+      <div class="creature-image">
+        <img src="assets/images/creatures/bisan.webp" alt="[translate:Бисан]">
+        <div class="creature-name">БИСАН</div>
+      </div>
+      <div class="creature-desc">
+        Японский лесной дух с лицом старухи. Заманивает путников песнями, крадёт детей и питается их страхом.
+      </div>
+    </div>
+    <div class="creature-card-face creature-card-back">
+      <div class="creature-weak-title">СЛАБОСТИ</div>
+      <ul class="creature-weak-list">
+        <li>Соль</li>
+        <li>Огонь</li>
+        <li>Священные зеркала</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- КРОВАВАЯ МЭРИ -->
+<div class="creature-card" data-id="bloodymary">
+  <div class="creature-card-inner">
+    <div class="creature-card-face creature-card-front">
+      <div class="creature-image">
+        <img src="assets/images/creatures/bloodymary.webp" alt="[translate:Кровавая Мэри]">
+        <div class="creature-name">КРОВАВАЯ МЭРИ</div>
+      </div>
+      <div class="creature-desc">
+        Зеркальный дух, вызываемый ритуалом. Вырывает глаза, царапает лицо и утаскивает душу в отражение.
+      </div>
+    </div>
+    <div class="creature-card-face creature-card-back">
+      <div class="creature-weak-title">СЛАБОСТИ</div>
+      <ul class="creature-weak-list">
+        <li>Соль по краям зеркала</li>
+        <li>Разбитое зеркало</li>
+        <li>Свет</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- КЛОУН -->
+<div class="creature-card" data-id="clown">
+  <div class="creature-card-inner">
+    <div class="creature-card-face creature-card-front">
+      <div class="creature-image">
+        <img src="assets/images/creatures/clown.webp" alt="[translate:Клоун]">
+        <div class="creature-name">КЛОУН</div>
+      </div>
+      <div class="creature-desc">
+        Шут-убийца из канализации. Телепортируется через стоки, режет детей и оставляет воздушные шары с кровью.
+      </div>
+    </div>
+    <div class="creature-card-face creature-card-back">
+      <div class="creature-weak-title">СЛАБОСТИ</div>
+      <ul class="creature-weak-list">
+        <li>Серебро</li>
+        <li>Ритуальное убийство детей</li>
+        <li>Огонь</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ЛАМИЯ -->
+<div class="creature-card" data-id="lamia">
+  <div class="creature-card-inner">
+    <div class="creature-card-face creature-card-front">
+      <div class="creature-image">
+        <img src="assets/images/creatures/lamia.webp" alt="[translate:Ламия]">
+        <div class="creature-name">ЛАМИЯ</div>
+      </div>
+      <div class="creature-desc">
+        Змеиная женщина, крадущая детей. Пьёт их кровь, принимает облик матери и заманивает в пещеры.
+      </div>
+    </div>
+    <div class="creature-card-face creature-card-back">
+      <div class="creature-weak-title">СЛАБОСТИ</div>
+      <ul class="creature-weak-list">
+        <li>Серебро</li>
+        <li>Железо</li>
+        <li>Возвращение детей</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ПРИЗРАК -->
+<div class="creature-card" data-id="ghost">
+  <div class="creature-card-inner">
+    <div class="creature-card-face creature-card-front">
+      <div class="creature-image">
+        <img src="assets/images/creatures/ghost.webp" alt="[translate:Ппризрак]">
+        <div class="creature-name">ПРИЗРАК</div>
+      </div>
+      <div class="creature-desc">
+        Душа, привязанная к месту смерти. Замораживает воздух, вызывает галлюцинации и доводит до безумия.
+      </div>
+    </div>
+    <div class="creature-card-face creature-card-back">
+      <div class="creature-weak-title">СЛАБОСТИ</div>
+      <ul class="creature-weak-list">
+        <li>Соль</li>
+        <li>Железо</li>
+        <li>Завершение незавершённых дел</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+</div> <!-- конец .creatures-grid -->
+
+<button class="creatures-next-btn" id="creatures-next-btn">›</button>
+
+</div> <!-- конец .creatures-inner -->
+</section>
+
+<section id="about" class="about">
+  <div class="about-overlay"></div>
+
+  <div class="about-inner">
+    <h2 class="about-title">ABOUT</h2>
+
+    <div class="about-content">
+      <!-- ВЕРХНИЙ БЛОК -->
+      <div class="about-main-text">
+        Этот сайт — дань уважения сериалу «Сверхъестественное», который на 15 лет стал домом для миллионов зрителей. Здесь нет спойлеров без предупреждения, нет сухой энциклопедии — только то, что важно: герои, которые стали семьёй, места, где решались судьбы миров, и слова, которые заставляют сердце биться чаще.
+      </div>
+
+      <!-- НИЖНИЙ ОБЪЕДИНЁННЫЙ БЛОК -->
+      <div class="about-bottom-text">
+        «Сверхъестественное» показало, что даже в самой тёмной ночи можно найти свет — в брате, в друге, в маленькой чёрной Импале на бесконечной дороге.
+        <br><br>
+        Спасибо, что ты здесь.<br>
+        Пусть твой путь будет таким же смелым, как у Дина, мудрым, как у Бобби, и верным, как у Кастиэля.
+        <br><br>
+        — Твой проводник по миру сверхъестественного
+      </div>
+
+      <!-- ЦИТАТА СПРАВА МЕЖДУ БЛОКАМИ -->
+      <div class="about-quote-box">
+        <div class="about-quote">СЕМЬЯ — ЭТО НЕ ТОЛЬКО КРОВНЫЕ УЗЫ.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- КНОПКА ВВЕРХ -->
+<button id="scroll-to-top" class="scroll-to-top">
+  <img src="assets/images/impala-badge.png" alt="Save the Impala. Ride a Winchester">
+</button>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>SUPERNATURAL GUIDE • 2025</p>
+            <p>Вся информация собрана из открытых источников и сериала «Сверхъестественное» (© Warner Bros. Entertainment). Этот проект некоммерческий и создан исключительно в образовательных и фанатских целях.</p>
+            <p>Сделано с любовью и кровью на дороге без конца.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
