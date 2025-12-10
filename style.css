@@ -1280,166 +1280,148 @@ footer p {
 /* === АДАПТИВ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ === */
 
 @media (max-width: 768px) {
-  /* Общий контейнер — чуть меньше отступы, но ширина и структура как на десктопе */
+  /* Общий масштаб: всё чуть меньше */
+  html {
+    font-size: 90%; /* базовый шрифт меньше */
+  }
+
   .container {
-    padding: 0 16px;
+    padding: 0 12px;
   }
 
-  /* Шапка — оставляем в одну линию */
+  /* Шапка */
   header .container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-  }
-
-  nav ul {
-    flex-wrap: nowrap;
-    gap: 12px;
+    gap: 10px;
   }
 
   nav li a {
-    padding: 6px 10px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    padding: 4px 8px;
   }
 
   /* Hero */
+  .hero {
+    padding: 60px 0 40px;
+  }
+
   .hero h1,
   .logo-text {
-    font-size: 2.2rem; /* чуть меньше, но то же положение */
+    font-size: 1.8rem;
   }
 
   .welcome-box p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .btn-start {
-    padding: 10px 24px;
-    font-size: 0.95rem;
-    border-radius: 20px;
+    padding: 8px 18px;
+    font-size: 0.85rem;
+    border-radius: 16px;
   }
 
-  /* Заголовки секций — только уменьшение размера */
+  /* Заголовки секций */
   .characters h2,
   .seasons-heading,
   .creatures-title,
   .quotes-title,
   .about-title,
   .locations-title {
-    font-size: 1.9rem;
-    margin-bottom: 32px;
-    text-align: left;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
   }
 
-  /* НЕ меняем direction, чтобы сетки остались как на десктопе */
-  .characters-container,
-  .seasons-layout,
-  .creatures-grid,
-  .location-content,
-  .quotes-container,
-  .about-content {
-    /* никакого flex-direction: column; */
-    gap: 24px;
-  }
-
-  /* Боковые панели и списки — сохраняем размеры, только паддинги */
-  .sidebar,
-  .seasons-sidebar {
-    padding: 12px;
-  }
-
-  .character-list,
-  .season-list {
-    height: inherit;
-    overflow: hidden;
-  }
-
-  /* Блок Дина — оставляем два столбца */
-  .dean-wrapper {
-    padding-right: 0;
-    gap: 24px;
-  }
-
-  .dean-photo-block {
-    height: 320px;
-  }
-
+  /* Текстовые блоки */
   .dean-text-column,
-  .season-content {
-    max-width: 100%;
-  }
-
-  .dean-quote {
-    margin-left: 0;
-  }
-
-  /* Locations — только отступы, без смены колонок */
-  .location-page {
-    padding: 70px 16px 60px;
-  }
-
-  .locations-title {
-    position: relative;
-    text-align: left;
-  }
-
+  .season-content,
+  .about-main-text,
+  .about-bottom-text,
   .location-text-block,
-  .location-image,
-  .next-image {
-    width: 100%;
+  .quote-item,
+  .creature-card-front,
+  .creature-card-back {
+    font-size: 0.85rem;
+  }
+
+  /* Картинки персонажей/Дина */
+  .dean-photo-block {
+    height: 240px;
+  }
+
+  .character-item img {
+    width: 42px;
+    height: 42px;
+  }
+
+  /* Seasons */
+  .season-item img {
+    width: 70px;
+    height: 70px;
+  }
+
+  /* Locations */
+  .location-page {
+    padding: 50px 12px 40px;
   }
 
   .location-image,
   .next-image {
-    height: 260px;
+    height: 200px;
   }
 
-  .arrows {
-    margin-top: 16px;
+  .arrows .arrow {
+    font-size: 1.2rem;
   }
 
-  /* Quotes — оставляем три карточки в ряд, только ширину регулируем */
+  /* Quotes */
   .quotes-inner {
-    padding: 60px 16px;
+    padding: 40px 12px;
   }
 
   .quote-item {
-    max-width: 260px;
+    transform: scale(0.9);
   }
 
   .next-quotes-btn {
-    margin-top: 32px;
+    transform: scale(0.9);
   }
 
-  /* Creatures — сетка остаётся как на десктопе, только расстояния */
+  /* Creatures */
   .creatures-grid {
-    gap: 20px;
+    gap: 16px;
+  }
+
+  .creature-card {
+    transform: scale(0.9);
   }
 
   .creatures-next-btn {
-    bottom: 20px;
+    transform: scale(0.85);
+    bottom: 16px;
   }
 
   /* About */
   .about-inner {
-    padding: 80px 16px;
-  }
-
-  .about-main-text,
-  .about-bottom-text {
-    padding: 24px;
+    padding: 60px 12px;
   }
 
   .about-quote-box {
-    max-width: 90%;
+    transform: scale(0.9);
   }
 
   /* Footer */
   footer {
-    padding: 24px 0;
+    padding: 18px 0;
+    font-size: 0.8rem;
   }
+
+  .social a {
+    transform: scale(0.9);
+    margin: 0 4px;
+  }
+}
 
   .social a {
     margin: 0 6px;
   }
 }
+
