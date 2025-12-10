@@ -1280,21 +1280,24 @@ footer p {
 /* === АДАПТИВ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ === */
 
 @media (max-width: 768px) {
-  /* Общие отступы */
+  /* Общий контейнер — чуть меньше отступы, но ширина и структура как на десктопе */
   .container {
     padding: 0 16px;
   }
 
-  /* Шапка */
+  /* Шапка — оставляем в одну линию */
   header .container {
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
   }
+
   nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
+    flex-wrap: nowrap;
+    gap: 12px;
   }
+
   nav li a {
     padding: 6px 10px;
     font-size: 0.9rem;
@@ -1303,140 +1306,131 @@ footer p {
   /* Hero */
   .hero h1,
   .logo-text {
-    font-size: 2.2rem;
+    font-size: 2.2rem; /* чуть меньше, но то же положение */
   }
+
   .welcome-box p {
     font-size: 1rem;
   }
+
   .btn-start {
-    padding: 10px 20px;
+    padding: 10px 24px;
     font-size: 0.95rem;
-    border-radius: 16px;
+    border-radius: 20px;
   }
 
-  /* Characters */
+  /* Заголовки секций — только уменьшение размера */
   .characters h2,
   .seasons-heading,
   .creatures-title,
   .quotes-title,
   .about-title,
   .locations-title {
-    font-size: 1.8rem;
-    text-align: center;
+    font-size: 1.9rem;
     margin-bottom: 32px;
-  }
-  .characters h2,
-  .seasons-heading,
-  .creatures-title {
     text-align: left;
   }
+
+  /* НЕ меняем direction, чтобы сетки остались как на десктопе */
   .characters-container,
   .seasons-layout,
-  .creatures-grid {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+  .creatures-grid,
+  .location-content,
+  .quotes-container,
+  .about-content {
+    /* никакого flex-direction: column; */
+    gap: 24px;
   }
+
+  /* Боковые панели и списки — сохраняем размеры, только паддинги */
   .sidebar,
   .seasons-sidebar {
-    width: 100%;
-    max-width: 300px;
-    padding: 16px;
+    padding: 12px;
   }
+
   .character-list,
   .season-list {
-    height: auto;
-    overflow: visible;
+    height: inherit;
+    overflow: hidden;
   }
+
+  /* Блок Дина — оставляем два столбца */
   .dean-wrapper {
-    flex-direction: column;
-    gap: 24px;
     padding-right: 0;
+    gap: 24px;
   }
+
   .dean-photo-block {
-    width: 100%;
-    height: 300px;
+    height: 320px;
   }
+
   .dean-text-column,
   .season-content {
     max-width: 100%;
-    text-align: center;
-  }
-  .dean-quote {
-    margin-left: 0;
-    margin-right: auto;
   }
 
-  /* Locations */
+  .dean-quote {
+    margin-left: 0;
+  }
+
+  /* Locations — только отступы, без смены колонок */
   .location-page {
     padding: 70px 16px 60px;
   }
+
   .locations-title {
-    position: static;
-    text-align: center;
+    position: relative;
+    text-align: left;
   }
-  .location-content {
-    flex-direction: column;
-    gap: 30px;
-  }
+
   .location-text-block,
   .location-image,
   .next-image {
     width: 100%;
-    height: auto;
   }
+
   .location-image,
   .next-image {
     height: 260px;
   }
+
   .arrows {
-    margin-top: 24px;
+    margin-top: 16px;
   }
 
-  /* Quotes */
+  /* Quotes — оставляем три карточки в ряд, только ширину регулируем */
   .quotes-inner {
     padding: 60px 16px;
   }
-  .quotes-container {
-    flex-direction: column;
-    gap: 24px;
-  }
+
   .quote-item {
-    width: 100%;
-    max-width: 340px;
-  }
-  .next-quotes-btn {
-    margin: 40px auto 20px;
+    max-width: 260px;
   }
 
-  /* Creatures */
-  .creatures-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
+  .next-quotes-btn {
+    margin-top: 32px;
   }
+
+  /* Creatures — сетка остаётся как на десктопе, только расстояния */
+  .creatures-grid {
+    gap: 20px;
+  }
+
   .creatures-next-btn {
-    top: auto;
     bottom: 20px;
-    right: 50%;
-    transform: translateX(50%);
   }
 
   /* About */
   .about-inner {
     padding: 80px 16px;
   }
-  .about-content {
-    gap: 24px;
-  }
+
   .about-main-text,
   .about-bottom-text {
     padding: 24px;
-    max-width: 100%;
   }
+
   .about-quote-box {
-    position: static;
-    transform: none;
-    margin: 0 auto;
     max-width: 90%;
   }
 
@@ -1444,9 +1438,7 @@ footer p {
   footer {
     padding: 24px 0;
   }
-  .social {
-    margin-top: 16px;
-  }
+
   .social a {
     margin: 0 6px;
   }
