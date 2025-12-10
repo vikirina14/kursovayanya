@@ -1279,149 +1279,179 @@ footer p {
 
 /* === АДАПТИВ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ === */
 
-@media (max-width: 768px) {
-  /* Общий масштаб: всё чуть меньше */
-  html {
-    font-size: 90%; /* базовый шрифт меньше */
-  }
 
+@media (max-width: 768px) {
+  /* Общие отступы */
   .container {
-    padding: 0 12px;
+    padding: 0 16px;
   }
 
   /* Шапка */
   header .container {
+    flex-direction: column;
     gap: 10px;
   }
-
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
   nav li a {
-    font-size: 0.85rem;
-    padding: 4px 8px;
-  }
-
-  /* Hero */
-  .hero {
-    padding: 60px 0 40px;
-  }
-
-  .hero h1,
-  .logo-text {
-    font-size: 1.8rem;
-  }
-
-  .welcome-box p {
+    padding: 6px 10px;
     font-size: 0.9rem;
   }
 
+  /* Hero */
+  .hero h1,
+  .logo-text {
+    font-size: 2.2rem;
+  }
+  .welcome-box p {
+    font-size: 1rem;
+  }
   .btn-start {
-    padding: 8px 18px;
-    font-size: 0.85rem;
+    padding: 10px 20px;
+    font-size: 0.95rem;
     border-radius: 16px;
   }
 
-  /* Заголовки секций */
+  /* Characters */
   .characters h2,
   .seasons-heading,
   .creatures-title,
   .quotes-title,
   .about-title,
   .locations-title {
-    font-size: 1.4rem;
-    margin-bottom: 20px;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 32px;
   }
-
-  /* Текстовые блоки */
-  .dean-text-column,
-  .season-content,
-  .about-main-text,
-  .about-bottom-text,
-  .location-text-block,
-  .quote-item,
-  .creature-card-front,
-  .creature-card-back {
-    font-size: 0.85rem;
+  .characters h2,
+  .seasons-heading,
+  .creatures-title {
+    text-align: left;
   }
-
-  /* Картинки персонажей/Дина */
+  .characters-container,
+  .seasons-layout,
+  .creatures-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .sidebar,
+  .seasons-sidebar {
+    width: 100%;
+    max-width: 300px;
+    padding: 16px;
+  }
+  .character-list,
+  .season-list {
+    height: auto;
+    overflow: visible;
+  }
+  .dean-wrapper {
+    flex-direction: column;
+    gap: 24px;
+    padding-right: 0;
+  }
   .dean-photo-block {
-    height: 240px;
+    width: 100%;
+    height: 300px;
   }
-
-  .character-item img {
-    width: 42px;
-    height: 42px;
+  .dean-text-column,
+  .season-content {
+    max-width: 100%;
+    text-align: center;
   }
-
-  /* Seasons */
-  .season-item img {
-    width: 70px;
-    height: 70px;
+  .dean-quote {
+    margin-left: 0;
+    margin-right: auto;
   }
 
   /* Locations */
   .location-page {
-    padding: 50px 12px 40px;
+    padding: 70px 16px 60px;
   }
-
+  .locations-title {
+    position: static;
+    text-align: center;
+  }
+  .location-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .location-text-block,
   .location-image,
   .next-image {
-    height: 200px;
+    width: 100%;
+    height: auto;
   }
-
-  .arrows .arrow {
-    font-size: 1.2rem;
+  .location-image,
+  .next-image {
+    height: 260px;
+  }
+  .arrows {
+    margin-top: 24px;
   }
 
   /* Quotes */
   .quotes-inner {
-    padding: 40px 12px;
+    padding: 60px 16px;
   }
-
+  .quotes-container {
+    flex-direction: column;
+    gap: 24px;
+  }
   .quote-item {
-    transform: scale(0.9);
+    width: 100%;
+    max-width: 340px;
   }
-
   .next-quotes-btn {
-    transform: scale(0.9);
+    margin: 40px auto 20px;
   }
 
   /* Creatures */
   .creatures-grid {
-    gap: 16px;
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
-
-  .creature-card {
-    transform: scale(0.9);
-  }
-
   .creatures-next-btn {
-    transform: scale(0.85);
-    bottom: 16px;
+    top: auto;
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%);
   }
 
   /* About */
   .about-inner {
-    padding: 60px 12px;
+    padding: 80px 16px;
   }
-
+  .about-content {
+    gap: 24px;
+  }
+  .about-main-text,
+  .about-bottom-text {
+    padding: 24px;
+    max-width: 100%;
+  }
   .about-quote-box {
-    transform: scale(0.9);
+    position: static;
+    transform: none;
+    margin: 0 auto;
+    max-width: 90%;
   }
 
   /* Footer */
   footer {
-    padding: 18px 0;
-    font-size: 0.8rem;
+    padding: 24px 0;
   }
-
-  .social a {
-    transform: scale(0.9);
-    margin: 0 4px;
+  .social {
+    margin-top: 16px;
   }
-}
-
   .social a {
     margin: 0 6px;
   }
 }
+
+
 
